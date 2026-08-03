@@ -1,0 +1,20 @@
+{
+  "skill_name": "six-echo-ai-talk",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "把一份关于 AI Agent、Harness 和个人工作流的中文演讲草稿做成可公开分享的单页 HTML，沿用六叔的天狗面具个人 IP，要求有章节导航、Prompt 五段式、Skill 分类 tab 和低调的讲者提示。",
+      "expected_output": "生成结构清晰、白色主背景、Esther 风格视觉、可交互且可直接打开的 HTML 页面。"
+    },
+    {
+      "id": 2,
+      "prompt": "请只重做演讲页面里的 Harness 章节：用户外露营烧烤派对讲清楚 Agent 为什么会翻车，以及 Harness 如何通过上下文、状态、工具权限、验证和复盘让任务可靠完成；加入四格漫画式图文结构。",
+      "expected_output": "Harness 位于 Agent 之后，案例有四个阶段，图文不遮挡，使用统一横条和细线视觉。"
+    },
+    {
+      "id": 3,
+      "prompt": "把我的 AI 工具清单和个人工作经验整理成 Skill 样例区，按内容视觉、研发工作流、知识研究、组织与 AI 员工分类展示，不要把全部条目挤在一屏，并加入键盘可用的筛选交互。",
+      "expected_output": "Skill 完整保留但按类别切换展示，tab 状态可访问，移动端可用。"
+    }
+  ]
+}
