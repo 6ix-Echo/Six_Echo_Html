@@ -1,4 +1,4 @@
-# Six-Echo 项目模式参考
+# Personal IP HTML 项目模式参考
 
 本文件记录从 `ai-human-ai-talk.html` 提炼的可迁移模式，不复制具体演讲内容。
 

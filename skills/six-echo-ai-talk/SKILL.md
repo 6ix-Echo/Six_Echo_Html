@@ -1,11 +1,11 @@
 ---
 name: six-echo-ai-talk
-description: 为六叔（Six-Echo）生成或改造面向公开分享的中文 AI 主题 HTML 演讲页面、长图文演讲稿、活动页与个人 IP 展示页。只要用户提到六叔、AI 时代的人与人、AI 焦虑、Agent、Harness、Prompt、Skill 体系、AI 演讲稿、AI 大会页面、个人 IP 海报或希望把一份中文演讲资料做成可交互网页，就优先使用本 Skill。它把 Esther 不二设计系统的视觉语言与六叔项目中验证过的叙事、交互、响应式和发布流程结合起来。
+description: 用于创建、改造和发布可分享的个人 IP HTML 页面、主题演讲页、活动页、教程页、知识产品页与个人品牌海报。它把 Esther 不二设计系统的视觉语言，与本项目验证过的内容架构、图示、交互、响应式和发布流程结合起来；使用者可以替换品牌名称、人物形象、色彩、文案与素材，生成自己的专属设计 Skill。
 license: CC BY-NC-SA 4.0 for the adapted Esther design principles; project-specific additions by Six-Echo
 compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or static hosting
 ---
 
-# Six-Echo AI Talk Skill
+# Personal IP HTML Design Skill
 
 这是一套“内容先成体系，再被视觉化，再可被讲出来”的页面生产方法。目标不是堆一页漂亮的卡片，而是让观众沿着一条清晰路径走完：焦虑 → 认知框架 → 术语 → 工作系统 → 可复制方法 → 行动。
 
@@ -15,7 +15,7 @@ compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or stat
 
 - **主题演讲页**：长页面、章节导航、演讲提示、可打印；默认采用本 Skill 的完整工作流。
 - **单节解释页**：只实现一个概念，如 Agent、Harness 或 Prompt，保留同一视觉变量和解释结构。
-- **个人 IP / 海报页**：突出六叔头像、天狗面具、肌肉线条和“工具是放大器，人是方向盘”，交互优先采用头像与二维码翻转卡。
+- **个人 IP / 海报页**：围绕使用者自己的头像、人物形象、金句、色彩与社群入口建立识别系统，交互优先采用头像与二维码翻转卡；六叔的天狗面具只是本项目的示例，不是必选模板。
 - **发布页**：优先保留资源相对路径、`index.html`、`.nojekyll` 与 GitHub Pages / Vercel 发布说明。
 
 如果用户给了现有 HTML，应先修改现有结构，不要另起一套页面；先读取其 CSS 变量、组件命名和资源路径，保留已有内容资产。
@@ -40,7 +40,7 @@ compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or stat
 
 本 Skill 采用 Esther 不二设计系统的适配版。使用时应读取已安装的 `/Users/long.hu/.codex/skills/esther-design-system/SKILL.md`，并按场景补充读取其 `brand-dna.md`、`references/components.md`、`references/layouts.md` 与 `references/checklist.md`。该系统原始项目为 Esther 不二，遵循 CC BY-NC-SA 4.0，页面或交付说明中保留署名。
 
-六叔项目的默认变量：
+本项目示例的默认变量；复制使用时，应替换为自己的品牌变量：
 
 ```css
 :root {
@@ -75,13 +75,9 @@ compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or stat
 - **品牌调性**：有力量但不压迫，有品质但不端着，手绘感但不幼稚，技术感但不冰冷，真实、克制、好奇、可执行。
 - **禁忌**：蓝紫渐变、霓虹、玻璃拟态、通用 AI 光效、默认 HTML 样式、彩色方块堆叠、所有 section 同一种卡片网格，以及公开页面中的内部资料编号。
 
-### 命名约定
+## 4. 个人 IP 视觉与翻转交互
 
-六叔的英文名是 **Six-Echo**。新建或重命名文件、目录、资源和链接时统一使用 `six-echo`，不要再使用 `liu-shu` 作为拼音缩写。既有旧资源需要迁移时，先批量重命名，再用 `rg` 检查引用是否全部更新。
-
-## 4. 六叔 IP 视觉与翻转交互
-
-头像保持原始六叔个人 IP：红色花纹帽、天狗面具、不露脸、自然比例和肌肉线条；不要改成大头小身体，也不要用表情包风格。头像金句原文保持不改，只调整排版。
+默认保留使用者提供的个人 IP 识别元素：头像、服饰、面具或其他人物特征、自然身材比例、金句与品牌色；不要擅自替换成通用 AI 形象，也不要用表情包风格。素材中的人物规则和金句原文应保持不改，只调整构图与排版。
 
 默认首页头像卡：
 
