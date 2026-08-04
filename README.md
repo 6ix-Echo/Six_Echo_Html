@@ -138,9 +138,9 @@ AI 焦虑
 Six_Echo_Html/
 ├── index.html                         ← GitHub Pages 入口
 ├── assets/                            ← 页面图片和视觉素材
-│   ├── liu-shu-ip.png                 ← 六叔个人 IP 头像
-│   ├── liu-shu-community-qr.png       ← 社群二维码
-│   ├── liu-shu-community-poster.jpg   ← 社群海报
+│   ├── six-echo-ip.png                ← 六叔个人 IP 头像
+│   ├── six-echo-community-qr.png      ← 社群二维码
+│   ├── six-echo-community-poster.jpg  ← 社群海报
 │   ├── harness-camp-*.webp             ← Harness 露营案例漫画
 │   ├── term-*.png                      ← AI 术语图示
 │   └── prompt-*.png                    ← Prompt 图示
