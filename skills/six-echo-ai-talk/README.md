@@ -6,6 +6,10 @@
 
 > **一句话**：把一份中文 AI 主题资料，变成一份讲得清、看得懂、能互动、可公开分享的 HTML 演讲页面。
 
+> **当前版本**：v1.0.0 · 2026-08-04
+
+如果你只是想看最终效果，请先打开 [在线演讲页面](https://6ix-echo.github.io/Six_Echo_Html/)；如果你想让 AI 按同样的方法继续生成页面，再安装并调用本 Skill。
+
 ---
 
 ## 适合什么时候使用
@@ -19,6 +23,17 @@
 - 把 AI 工具和工作经验整理为个人 Skill 体系
 - 给已有页面增加翻转卡、标签页、复制按钮和章节导航
 - 检查页面的交互、响应式布局、视觉统一性和 GitHub Pages 发布准备
+
+## 不适合什么时候使用
+
+这个 Skill 不是通用的 UI 组件库，也不是只负责“把文字变漂亮”的排版工具。以下任务更适合使用其他专用工具：
+
+- 只需要写一段普通文章或新闻稿
+- 只需要完成后端接口、数据库或业务逻辑
+- 只需要做数据分析图表而没有演讲叙事需求
+- 只需要生成与六叔个人 IP 无关的品牌视觉系统
+
+如果任务同时包含 AI 主题内容、演讲结构和 HTML 交互页面，则优先使用本 Skill。
 
 ---
 
@@ -161,6 +176,8 @@ six-echo-ai-talk/
 
 [six-echo-ai-talk.skill](https://github.com/6ix-Echo/Six_Echo_Html/raw/main/skills/six-echo-ai-talk.skill)
 
+注意：安装包只包含运行 Skill 所需的 `SKILL.md` 和 `references/`，评测用例位于源目录的 `evals/`，用于维护者测试，不会被打进发布包。
+
 ---
 
 ## 怎么用
@@ -172,6 +189,40 @@ six-echo-ai-talk/
 也可以针对单个模块调用：
 
 > 使用 six-echo-ai-talk skill，只重做 Harness 露营派对章节，要求图文可视化、边框统一、照片融入背景板。
+
+### 本地安装
+
+```bash
+mkdir -p ~/.codex/skills
+unzip six-echo-ai-talk.skill -d ~/.codex/skills/six-echo-ai-talk
+```
+
+安装后重新打开 AI 工作环境。如果你的工具支持直接读取 GitHub Skill，也可以使用本目录中的 `SKILL.md` 作为规则源。
+
+### 如何提出更好的请求
+
+为了让输出更接近预期，建议同时说明：
+
+- 页面类型：演讲页、教程页、Landing Page 还是单节解释页
+- 受众：技术背景、阅读设备、预计分享时长
+- 必须保留的内容：观点、案例、图片、人物信息或原始金句
+- 交互要求：翻转卡、Tab、复制、打印或键盘可用性
+- 交付方式：本地 HTML、GitHub Pages、Vercel 或其他静态托管
+
+示例：
+
+> 使用 six-echo-ai-talk skill，把这份关于 AI Agent 的草稿做成 15 分钟中文演讲页面。保留所有观点，加入一个露营派对 Harness 案例，白色主背景，移动端可读，Prompt 样例需要支持复制，最后给出 GitHub Pages 发布检查。
+
+## 维护方式
+
+新增规范时，优先判断它属于哪一层：
+
+- 触发条件和总流程 → 修改 `SKILL.md`
+- 页面骨架、命名和常见修正 → 修改 `references/project-patterns.md`
+- 内容、视觉、交互和发布检查 → 修改 `references/qa-checklist.md`
+- 测试输入 → 修改 `evals/evals.json`
+
+修改后应重新检查 YAML frontmatter、资源链接、示例是否可执行，并同步更新版本号和 CHANGELOG。
 
 ---
 

@@ -6,8 +6,12 @@
 
 > **在线演讲页面**：https://6ix-echo.github.io/Six_Echo_Html/
 
+> 首次开启 GitHub Pages 后可能需要数分钟完成构建；如果暂时打不开，可先查看 [仓库源文件](https://github.com/6ix-Echo/Six_Echo_Html) 或等待页面发布完成。
+
 > **主讲人**：六叔（Six-Echo）  
 > 移动互联网早期连续创业者 · 数十年互联网、自动驾驶、机器人及 AI 领域从业 · 机器人认知智能硕士
+
+这是一个把 AI 主题分享、个人 IP、可视化解释和 AI 工作方法放在一起的公开项目。它既是一份演讲页面，也是一套把复杂概念讲给真实观众听的方法样本。
 
 ---
 
@@ -29,6 +33,14 @@
 - Prompt 五段式模板与完整示例
 - Skill 体系搭建与分类浏览
 - 演讲提示、章节导航、复制按钮、返回顶部和打印样式
+
+### 适合谁阅读
+
+- 准备做 AI 主题分享的讲者
+- 想理解 Agent、Harness 和 Skill 的产品经理、创业者与研发人员
+- 正在建立个人 AI 工作流的知识工作者
+- 想把复杂技术内容转成清晰图文的内容创作者
+- 想参考 HTML 演讲页面、个人 IP 页面或 GitHub Pages 项目的人
 
 ---
 
@@ -66,6 +78,28 @@ AI 焦虑
 | 搭建 Skill | 如何从真实失败中积累工作记忆 | 输入—Skill—输出系统图 |
 | Skill 样例 | 哪些方法值得沉淀成可复用技能 | 分类标签页与条目说明 |
 | 行动 | 听完之后从哪里开始 | 三个可执行动作 |
+
+## 这个项目具体产出了什么
+
+项目不是只有一个网页，目前包含五类可以复用的产出：
+
+1. **主题演讲页面**：把完整演讲内容组织成可阅读、可导航、可打印的长页面。
+2. **视觉解释组件**：包括 AI 六角色关系图、Agent Loop、Prompt Flow、Skill 系统图和 Harness 露营漫画。
+3. **个人 IP 交互组件**：六叔天狗面具头像、社群二维码翻转卡、主讲人标签与个人金句排版。
+4. **专属 Skill**：将内容结构、视觉规范、交互规则和 QA 流程沉淀为 `six-echo-ai-talk`。
+5. **公开协作基础**：通过 README、Project、Issue 模板和版本记录，让后续内容迭代有清晰入口。
+
+## 页面怎么读
+
+如果你第一次接触这个主题，可以按以下顺序阅读：
+
+1. 先看“为什么焦虑”，理解问题不是“AI 会不会突然替代所有人”，而是工作方法会不会被重新组织。
+2. 再看 Agent 六角色系统，区分模型、资料、行动、组织、方法和工具连接。
+3. 进入 Harness 露营派对，用一个生活场景理解为什么聪明的 Agent 仍然可能把事情办砸。
+4. 进入 Prompt 部分，把请求写成一份有上下文、有边界、有验收标准的工作说明书。
+5. 最后看 Skill 体系，思考如何把自己的真实经验和失败记录变成可复用能力。
+
+页面里的“演讲提示”是给讲者使用的辅助内容，普通读者可以按章节正文阅读，不需要一次展开所有提示。
 
 ---
 
@@ -134,6 +168,12 @@ open index.html
 
 页面采用相对资源路径，不依赖后端服务。
 
+### 在线页面发布说明
+
+本项目使用 GitHub Pages 发布静态 HTML。发布源为 `main` 分支根目录，入口文件是 `index.html`，图片统一放在 `assets/` 下。修改页面后，将变更推送到 `main`，GitHub Pages 会自动重新构建。
+
+如果刚刚开启 Pages，首次发布可能需要等待数分钟；遇到 404 时，先检查仓库 Settings → Pages 中是否为 `main` / `/(root)`，再检查 Actions 中的 Pages 构建任务。
+
 ### 使用专属 Skill
 
 阅读 [six-echo-ai-talk Skill](skills/six-echo-ai-talk/)，或者下载 [six-echo-ai-talk.skill](skills/six-echo-ai-talk.skill) 安装包。
@@ -141,6 +181,27 @@ open index.html
 调用示例：
 
 > 使用 six-echo-ai-talk skill，把这份 AI 主题资料整理成一份可公开分享、可交互、可打印的中文演讲 HTML 页面。
+
+Skill 安装包可以下载到本地 AI 工作环境中。若使用支持 `.skill` 的环境，直接导入 `skills/six-echo-ai-talk.skill`；如果手动安装，可解压到个人 Skill 目录：
+
+```bash
+mkdir -p ~/.codex/skills
+unzip skills/six-echo-ai-talk.skill -d ~/.codex/skills/six-echo-ai-talk
+```
+
+安装后，重新打开 AI 工作环境，并使用 `six-echo-ai-talk` 作为技能名调用。
+
+## 项目看板
+
+项目的内容规划与后续迭代放在 GitHub Project 中：
+
+🔗 [@6ix-Echo's six_echo_ai](https://github.com/6ix-Echo?tab=projects)
+
+GitHub Project 是任务和进度看板，不是代码仓库。代码、页面和图片仍保存在本仓库；Project 用于管理内容补充、视觉优化、Skill 迭代、发布检查和后续演讲版本。
+
+## 更新记录
+
+详见 [CHANGELOG.md](CHANGELOG.md)。当前版本重点完成了主题演讲页面、Harness 案例、Prompt 实践、Skill 体系和公开文档。
 
 ---
 
