@@ -38,7 +38,7 @@ compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or stat
 
 ## 3. 视觉基线
 
-本 Skill 采用 Esther 不二设计系统的适配版。使用时应读取已安装的 `/Users/long.hu/.codex/skills/esther-design-system/SKILL.md`，并按场景补充读取其 `brand-dna.md`、`references/components.md`、`references/layouts.md` 与 `references/checklist.md`。该系统原始项目为 Esther 不二，遵循 CC BY-NC-SA 4.0，页面或交付说明中保留署名。
+本 Skill 采用 Esther 不二设计系统的适配版。使用时，如果环境中已安装 `esther-design-system`，请通过 Skill 名称调用并按其说明加载相关品牌、组件、布局与检查参考；不要依赖任何作者本机绝对路径。如果未安装该 Skill，则使用本 Skill 自带的视觉基线，并在交付说明中标注 Esther 设计系统参考来源。该适配部分遵循 CC BY-NC-SA 4.0：保留原作者署名、不得未经许可商业使用，修改后的适配内容按相同协议分享。
 
 本项目示例的默认变量；复制使用时，应替换为自己的品牌变量：
 
