@@ -1,7 +1,7 @@
 ---
 name: six-echo-ai-talk
-description: 用于创建、改造和发布可分享的个人 IP HTML 页面、主题演讲页、活动页、教程页、知识产品页与个人品牌海报。它把 Esther 不二设计系统的视觉语言，与本项目验证过的内容架构、图示、交互、响应式和发布流程结合起来；使用者可以替换品牌名称、人物形象、色彩、文案与素材，生成自己的专属设计 Skill。
-license: CC BY-NC-SA 4.0 for the adapted Esther design principles; project-specific additions by Six-Echo
+description: 用于创建、改造和发布可分享的个人 IP HTML 页面、主题演讲页、活动页、教程页、知识产品页与个人品牌海报。它把 Six·Echo 设计系统的视觉语言，与本项目验证过的内容架构、图示、交互、响应式和发布流程结合起来；使用者可以替换品牌名称、人物形象、色彩、文案与素材，生成自己的专属设计 Skill。
+license: Six·Echo design system license; see README for usage terms
 compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or static hosting
 ---
 
@@ -38,7 +38,7 @@ compatibility: HTML/CSS/JavaScript, browser preview, optional Playwright or stat
 
 ## 3. 视觉基线
 
-本 Skill 采用 Esther 不二设计系统的适配版。使用时，如果环境中已安装 `esther-design-system`，请通过 Skill 名称调用并按其说明加载相关品牌、组件、布局与检查参考；不要依赖任何作者本机绝对路径。如果未安装该 Skill，则使用本 Skill 自带的视觉基线，并在交付说明中标注 Esther 设计系统参考来源。该适配部分遵循 CC BY-NC-SA 4.0：保留原作者署名、不得未经许可商业使用，修改后的适配内容按相同协议分享。
+本 Skill 使用 Six·Echo 设计系统的品牌、排版、布局、组件与质量检查规范。所有规则均以本 Skill 自带内容为准，不依赖作者本机的绝对路径；复制使用时，可替换品牌变量和个人 IP 素材，形成自己的设计版本。
 
 本项目示例的默认变量；复制使用时，应替换为自己的品牌变量：
 
@@ -143,7 +143,7 @@ Harness 必须放在 Agent 之后，并明确关系：Model 提供能力，Agent
 ## 7. 实现与检查工作流
 
 1. 读取用户素材和现有 HTML，列出内容不可遗漏项与资源引用。
-2. 读取 Esther 设计系统对应场景规范，建立 CSS 变量和页面骨架。
+2. 读取 Six·Echo 设计系统对应场景规范，建立 CSS 变量和页面骨架。
 3. 先完成内容结构，再完成图示，再加交互，避免用装饰掩盖内容缺口。
 4. 运行 `rg` 检查所有资源引用，确保 `assets/` 下文件存在。
 5. 用浏览器检查桌面、平板、手机三个宽度；重点看白色背景、标题对比度、照片比例、色条、翻转卡、标签页和长文本是否溢出。
@@ -158,6 +158,6 @@ Harness 必须放在 Agent 之后，并明确关系：Model 提供能力，Agent
 - 所有相对路径资源；
 - 交互功能说明（头像翻转、标签切换、复制按钮、返回顶部等）；
 - 如已发布，给出公网 URL；如未发布，给出最短发布步骤；
-- 明确说明 Esther 不二设计系统的署名与 CC BY-NC-SA 4.0 约束。
+- 页面和交付说明统一使用 Six·Echo 署名，并明确标注使用者自己的品牌素材与授权边界。
 
 不要在最终页面出现“面向几百人的大会演讲稿”“资料 1/3/图示”或内部制作提示等字样，除非用户明确要求。
