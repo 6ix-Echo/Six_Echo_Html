@@ -120,7 +120,7 @@ AI 焦虑
 
 ## 设计与交互
 
-本项目采用 Esther 不二设计系统的视觉方法，并结合六叔个人 IP 做了项目化适配：
+本项目采用 Six·Echo 设计系统，并结合六叔个人 IP 做了项目化适配：
 
 - 白色主背景，搭配蓝、黄、红三色作为信息强调
 - 中文衬线标题与无衬线正文形成阅读层级
@@ -218,17 +218,9 @@ GitHub Project 是任务和进度看板，不是代码仓库。代码、页面�
 
 ## Credits
 
-- 视觉方法与基础设计语言参考 [Esther 不二设计系统](https://github.com/esthersjw/esther-design-system)
-- 本项目在其 CC BY-NC-SA 4.0 许可基础上进行六叔个人 IP 与演讲场景适配
-- 内容、案例、页面实现和 `six-echo-ai-talk` 专属 Skill：Six-Echo
+- Six·Echo 设计系统、页面结构、案例与交互实现：Six·Echo
+- 内容、案例、页面实现和 `six-echo-ai-talk` Skill：Six·Echo
 
 ## License
 
-本项目中的 Esther 设计系统适配部分遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)：
-
-- ✅ 可使用、修改和分享
-- ✅ 必须保留 Esther 不二署名
-- ❌ 禁止未经许可的商业使用
-- 🔄 修改后的适配版本需以相同协议分享
-
-六叔个人 IP、头像、社群二维码和个人内容素材归 Six-Echo 所有，未经许可请勿用于商业用途或冒充官方身份。
+本项目的品牌署名为 **Six·Echo**。使用、修改或再品牌化时，请保留 Six·Echo 署名；项目中的头像、社群二维码、个人内容和其他素材，须遵守各自的原始授权协议，未经授权不得商业使用或冒充官方身份。
